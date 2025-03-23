@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Implementation Example</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>HTML5 Elements Demo</h1>
+  </header>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Ordered List (Roman Numerals)</h2>
+    <ol type="I">
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+         alt="Scenic view" 
+         width="600" 
+         height="400">
+  </section>
+
+  <!-- Table of 5 Contacts -->
+  <section>
+    <h2>Contacts Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice Johnson</td>
+          <td>123 Maple Street</td>
+          <td>555-1234</td>
+          <td>alice@example.com</td>
+        </tr>
+        <tr>
+          <td>Bob Smith</td>
+          <td>456 Oak Avenue</td>
+          <td>555-5678</td>
+          <td>bob@example.com</td>
+        </tr>
+        <tr>
+          <td>Carol Davis</td>
+          <td>789 Pine Road</td>
+          <td>555-8765</td>
+          <td>carol@example.com</td>
+        </tr>
+        <tr>
+          <td>David Brown</td>
+          <td>321 Cedar Blvd</td>
+          <td>555-4321</td>
+          <td>david@example.com</td>
+        </tr>
+        <tr>
+          <td>Eve Wilson</td>
+          <td>654 Birch Lane</td>
+          <td>555-9876</td>
+          <td>eve@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" novalidate>
+      <!-- Name Field -->
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      
+      <!-- Email Field -->
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+      </div>
+      
+      <!-- Password Field -->
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="6" required>
+      </div>
+      
+      <!-- Date Field -->
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      
+      <!-- Dropdown (Select) -->
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select your country</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+      
+      <!-- Radio Buttons -->
+      <div>
+        <p>Gender:</p>
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female">
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-other" name="gender" value="other">
+        <label for="gender-other">Other</label>
+      </div>
+      
+      <!-- Checkboxes -->
+      <div>
+        <p>Interests:</p>
+        <input type="checkbox" id="interest-news" name="interest" value="news">
+        <label for="interest-news">News</label>
+        <input type="checkbox" id="interest-sports" name="interest" value="sports">
+        <label for="interest-sports">Sports</label>
+        <input type="checkbox" id="interest-music" name="interest" value="music">
+        <label for="interest-music">Music</label>
+      </div>
+      
+      <!-- Submit Button -->
+      <div>
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Multimedia Elements -->
+  <section>
+    <h2>Multimedia Elements</h2>
+    <!-- Audio Element -->
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Element -->
+    <video width="600" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 HTML5 Demo</p>
+  </footer>
+
+</body>
+</html>
